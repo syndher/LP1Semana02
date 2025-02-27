@@ -36,6 +36,11 @@ using System.Text;
                 string everymaxmin = $"{lM}, {lm}, {bM}, {lm}, {bm}, {dM}, {dm}, {sbM}, {sbm}, {ulM}, {ulm}, {fM}, {fm}, {sM}, {sm}, {usM}, {usm}, {iM}, {im}, {uiM}, {uim}, {cM}, {cm}";
                 Console.WriteLine(everymaxmin);
 
+                double x = double.PositiveInfinity;
+                double y = double.NegativeInfinity;
+                float z = float.NaN;
+                string symbols = $"{x}, {y}, {z}";
+                Console.WriteLine(symbols);
 
 
 
