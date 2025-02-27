@@ -42,6 +42,10 @@ using System.Text;
                 string symbols = $"{x}, {y}, {z}";
                 Console.WriteLine(symbols);
 
+                uint ui = uint.MaxValue;
+                Console.WriteLine(ui + 1);
+
+
 
 
 
