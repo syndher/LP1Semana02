@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTZero", "ChatGPTZero\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakContinue", "BreakContinue\BreakContinue.csproj", "{39D16CA5-89EB-4FA9-8BEA-61D8368A4BBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTOne", "ChatGPTOne\ChatGPTOne.csproj", "{C64B2345-F2F2-4DBB-AE7D-A8618059F4F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{39D16CA5-89EB-4FA9-8BEA-61D8368A4BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39D16CA5-89EB-4FA9-8BEA-61D8368A4BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39D16CA5-89EB-4FA9-8BEA-61D8368A4BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64B2345-F2F2-4DBB-AE7D-A8618059F4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64B2345-F2F2-4DBB-AE7D-A8618059F4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64B2345-F2F2-4DBB-AE7D-A8618059F4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64B2345-F2F2-4DBB-AE7D-A8618059F4F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
