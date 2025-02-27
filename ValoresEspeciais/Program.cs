@@ -45,6 +45,15 @@ using System.Text;
                 uint ui = uint.MaxValue;
                 Console.WriteLine(ui + 1);
 
+                Console.WriteLine(fM + fM); //Overflow by causing infinity
+                Console.WriteLine(fM + 1);  //Overflow by a non-change in the number after an addition
+
+                float f2 = float.MaxValue;
+
+                Console.WriteLine(fM == f2 + 0.00001f); //Underflow by a non-change in the number addition, resulting in fM == f2, which counts as True
+
+
+
 
 
 
