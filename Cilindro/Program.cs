@@ -29,8 +29,12 @@ using System.Text;
              
                 Console.WriteLine(volume);  //Imprime a string obtida do volume
 
-                
 
+                double resultado = 2*x*r*(r + h); //Formula da Area do Cilindro
+
+                string area = $"{resultado:f3}"; // Formata o valor em apenas 3 casas decimais e converte em string
+
+                Console.WriteLine(area);
 
 
 
