@@ -9,12 +9,13 @@ namespace ChatGPTOne
   
             // Variables
             string question;
-            string response;
+            string response = "";
 
             // Asks the user for a question
             Console.Write("Ask me something: ");
             question = Console.ReadLine();
-
+            while (question != "EXIT")
+            {
                     switch (question)
                 {
                     case "Who are you?":
@@ -30,15 +31,17 @@ namespace ChatGPTOne
                         response = "I wish";
                         break;
                     case "EXIT":
-                        response = "Bye";
                         break;
                     default:
                         response = "I can't answer that";
                         break;
                }
 
-                
+                if (question != "EXIT")
                 Console.WriteLine(response);
-        }   
+                Console.Write("Ask me something: ");
+                question = Console.ReadLine();
+                
+        }   }
     }
 }
