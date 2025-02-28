@@ -1,7 +1,8 @@
 ﻿using System ;
+using System.Formats.Asn1;
 
 
-    namespace GuessTheNumber
+namespace GuessTheNumber
     {
       
         class Program
@@ -11,30 +12,49 @@
             {
                 Random rnd = new Random();
                 int numberToGuess = rnd.Next(31);
-                Console.WriteLine("Choose a number between 0 and 30");
-                string nmb = Console.ReadLine();
-                int nmbint = int.Parse(nmb);
-                if (nmbint > -1 && nmbint < 31);
-                
+                Console.WriteLine("Insert Number");
+
+                int attempts = 0;
+                bool guess = false;
+                while (guess == false)
+                {
+                    string nmb = Console.ReadLine();
+                    int nmbint = int.Parse(nmb);
+                if (nmbint > -1 && nmbint < 31)
+                {
+                    if (numberToGuess > nmbint)
+                    {
+                        Console.WriteLine($"The hidden number is higher than {nmbint}. Try again.");
+                        attempts = attempts + 1;
+                    }
+
+                    else if (numberToGuess < nmbint)
+                    {
+                        Console.WriteLine($"The hidden number is lower than {nmbint}. Try again.");
+                        attempts = attempts + 1;
+                    }
+                        
+
+                    else if (numberToGuess == nmbint)                     
+                        Console.WriteLine($"You took {attempts} attempts!");
+                        guess = true;
+                    
+                }
+
+
 
                 else
                     Console.WriteLine("That number is invalid, pick another");
-                    string nmb2 = Console.ReadLine();
-                    int nmbint2 = int.Parse(nmb2);
-                    nmbint = nmbint2;
+
+                }
 
 
                     
-            {
-
-               }
-
-                if (question != "EXIT")
-                Console.WriteLine(response);
-                Console.Write("Ask me something: ");
-                question = Console.ReadLine();
-
-
             }
+
+               
+
+
+            
         }
     }
